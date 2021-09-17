@@ -11,8 +11,4 @@ def index():
     return flask.render_template("index.html", lst=call_apis(artists=artists))
 
 
-app.run(
-    host=os.getenv('IP', '0.0.0.0'),
-    port=int(os.getenv('PORT', 4141)),
-    debug=True
-)
+app.run(debug=True)

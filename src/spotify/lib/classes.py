@@ -4,8 +4,8 @@ import requests
 class Spotify_Auth:
     """Class to get authorizations from spotify"""
     def __init__(self):
-        self.client_id = os.environ["CLIENT_ID"]
-        self.client_secret = os.environ["CLIENT_SECRET"]
+        self.client_id = os.environ.get("CLIENT_ID")
+        self.client_secret = os.environ.get("CLIENT_SECRET")
         self.auth_url = 'https://accounts.spotify.com/api/token'
         self.headers = {}
         self.data = {}

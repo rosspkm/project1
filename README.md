@@ -3,10 +3,32 @@
 # About
 
 ### Purpose:
+    - Make a website that desplays top songs from your favorite artists.
 
-### Technologies:
+    includes:
+        - Artist image
+        - Top songs
+        - Album art for each song
+        - Song preview
+        - Genius lyrics link
+
+### Tech Stack:
+    - Python
+        - flask for web framework
+        - requests for api calls
+    - HTML & CSS
+    - Heroku for deployment environment
 
 ### What it does:
+    - My project takes a list of hard coded artist ids from Spotify, makes 2 requests to the Spotify API:
+        1. A call to the artist endpoint:
+            - This gets the artist name as well as the artist picture
+        2. A call to their top songs endpoint:
+            - This gets the top song names, album art  and song preview
+
+    - Then it makes a call to the genius api, passes the song name and the artist name and gets the link to the lyrics page.
+
+    - Lastly, my app takes all this data and passes it to the HTML front end where it loops through all the artists, their songs, ect... and builds a collapsible dropdown to display this information.
 
 ### Questions:
 
@@ -24,6 +46,8 @@
 
 3. What would you do to improve your project in the future? 
     - To improve my project in the future, I'd implement a way to add artists based off of search and it uses the artists that you want, as well as a general song and artist search feature to do general searches as well.
+    
+    - I'd also make a more appealing UI and make the design of it look cleaner.
 
 
 # Imports
@@ -48,7 +72,7 @@ To import use `pip install <package>`
 1. clone down the project from github
     - `git clone https://www.github.com/csc4350-f21/project1-rmiller87`
 
-2. install all packages as listed above
+2. install all packages in [Imports](#imports)
 
 3. create a .env file where you will store your environment variables
     ```

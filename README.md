@@ -57,7 +57,6 @@ For api requesting:
 requests - for api requests
 os - for .env variables
 dotenv - for env variables
-base64 - for auth key encoding 
 ```
 
 For website:

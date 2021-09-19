@@ -13,5 +13,6 @@ def get_genius_link(song, artist, access_token):
     )
     for hit in response.json()['response']['hits']:
         if artist.lower() in hit['result']['primary_artist']['name'].lower():
+            print(hit['result']['url'])
             return hit['result']['url']
             

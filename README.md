@@ -20,15 +20,15 @@
     - Heroku for deployment environment
 
 ### What it does:
-    - My project takes a list of hard coded artist ids from Spotify, makes 2 requests to the Spotify API:
-        1. A call to the artist endpoint:
-            - This gets the artist name as well as the artist picture
-        2. A call to their top songs endpoint:
-            - This gets the top song names, album art  and song preview
+1. My project takes a list of hard coded artist ids from Spotify, makes 2 requests to the Spotify API:
+    1. A call to the artist endpoint:
+        - This gets the artist name as well as the artist picture
+    2. A call to their top songs endpoint:
+        - This gets the top song names, album art  and song preview
 
-    - Then it makes a call to the genius api, passes the song name and the artist name and gets the link to the lyrics page.
+2. Then it makes a call to the genius api, passes the song name and the artist name and gets the link to the lyrics page.
 
-    - Lastly, my app takes all this data and passes it to the HTML front end where it loops through all the artists, their songs, ect... and builds a collapsible dropdown to display this information.
+3. Lastly, my app takes all this data and passes it to the HTML front end where it loops through all the artists, their songs, ect... and builds a collapsible dropdown to display this information.
 
 ### Questions:
 

@@ -1,7 +1,8 @@
 import os
+import boto3
 import flask
+from boto.s3.connection import S3Connection
 from src.main import call_apis
-
 app = flask.Flask(__name__, template_folder='./web/templates', static_folder='./web/static')
 
 artists = ['718COspgdWOnwOFpJHRZHS', '3WrFJ7ztbogyGnTHbHJFl2', '3TVXtAsR1Inumwj472S9r4', '3b8QkneNDz4JHKKKlLgYZg']

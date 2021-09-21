@@ -17,7 +17,7 @@
         - flask for web framework
         - requests for api calls
     - HTML & CSS
-    - Heroku for deployment environment
+    - Heroku for deployment environment 
 
 ### What it does:
 1. My project takes a list of hard coded artist ids from Spotify, makes 2 requests to the Spotify API:
@@ -29,6 +29,8 @@
 2. Then it makes a call to the genius api, passes the song name and the artist name and gets the link to the lyrics page.
 
 3. Lastly, my app takes all this data and passes it to the HTML front end where it loops through all the artists, their songs, ect... and builds a collapsible dropdown to display this information.
+
+Live demo located at `https://project1-rmiller87.herokuapp.com`
 
 ### Questions:
 
